@@ -24,11 +24,7 @@ module cursor(
     
     else begin
       if (((x_coord >= cursor_hor_x && x_coord <= cursor_hor_x + CURSOR_ARM_SIZE && y_coord == cursor_hor_y) 
-         ^ (y_coord >= cursor_vert_y && y_coord <= cursor_vert_y + CURSOR_ARM_SIZE && x_coord == cursor_vert_x))
-
-        /*((x_coord == cursor_vert_x && y_coord >= cursor_vert_y && y_coord <= cursor_vert_y + CURSOR_ARM_SIZE)
-       || (y_coord == cursor_hor_y && x_coord >= cursor_hor_x && x_coord <= cursor_hor_x + CURSOR_ARM_SIZE))
-       && (x_coord != cursor_vert_x && y_coord != cursor_hor_y)*/) begin 
+         ^ (y_coord >= cursor_vert_y && y_coord <= cursor_vert_y + CURSOR_ARM_SIZE && x_coord == cursor_vert_x))) begin 
         is_on_cursor = 1;
       end
       else

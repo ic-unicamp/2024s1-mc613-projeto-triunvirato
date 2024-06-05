@@ -57,14 +57,8 @@ module top(
   );
 
 
-  assign top_R = (is_on_cursor) ? 0 : 255;
-  assign top_G = (is_on_cursor) ? 0 : 255;
-  assign top_B = (is_on_cursor) ? 0 : 255;
-  // assign top_R = ((x_coord >= 0) && (x_coord < 213)) ? 200 : 0;
-  // assign top_G = ((x_coord >= 213) && (x_coord < 426)) ? 200 : 0;
-  // assign top_B = ((x_coord >= 426) && (x_coord < 639)) ? 200 : 0;
-
-
-  
+  assign top_R = (is_on_cursor) ? 50 : 255;
+  assign top_G = (is_on_cursor) ? 50 : 255;
+  assign top_B = (is_on_cursor) ? 50 : 255;
 
 endmodule
