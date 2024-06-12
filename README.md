@@ -8,6 +8,6 @@ Grupo:
 
 ## Descrição
 
-Descrição do projeto.
+### Leia o Manual.pdf para instruções de uso
 
 
